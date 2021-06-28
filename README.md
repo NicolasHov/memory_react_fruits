@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## ROADMAP
+
+  - stop countdown when game finished
+  
+  - re-hide every card when new game
+
+  - add color, animations...
+
 ## Available Scripts
 
 In the project directory, you can run:
