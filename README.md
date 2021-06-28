@@ -1,7 +1,9 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Memory Game
 
+The server API could be found at [NicolasHov/memory_fruits_server](https://github.com/NicolasHov/memory_fruits_server)
+
+[screenshot.png](https://github.com/NicolasHov/memory_react_fruits/screenshot.png)
 
 ## ROADMAP
 
@@ -10,6 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - re-hide every card when new game
 
   - add color, animations...
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
