@@ -12,8 +12,8 @@ const Game = () => {
   /// GENERATE BOARD ///
 
   const generateCards = () => {
-    const fruitsArray = ['pomme-rouge', 'banane', 'orange', 'citron-vert', 'grenade', 'abricot'
-    // , 'citron', 'fraise', 'pomme-verte', 'pêche', 'raisin', 'pastèque', 'prune', 'poire', 'cerise-rouge', 'framboise', 'mangue', 'cerise-jaune'
+    const fruitsArray = ['pomme-rouge', 'banane', 'orange', 'citron-vert', 'grenade', 'abricot', 'citron', 'fraise', 'pomme-verte'
+    // , 'pêche', 'raisin', 'pastèque', 'prune', 'poire', 'cerise-rouge', 'framboise', 'mangue', 'cerise-jaune'
     ]
     const newArray = []
     fruitsArray.forEach((item, _id) => {
