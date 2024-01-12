@@ -13,7 +13,7 @@ const Game = () => {
 
   const generateCards = () => {
     const fruitsArray = ['pomme-rouge', 'banane', 'orange', 'citron-vert', 'grenade', 'abricot', 'citron', 'fraise', 'pomme-verte'
-    // , 'pêche', 'raisin', 'pastèque', 'prune', 'poire', 'cerise-rouge', 'framboise', 'mangue', 'cerise-jaune'
+      // , 'pêche', 'raisin', 'pastèque', 'prune', 'poire', 'cerise-rouge', 'framboise', 'mangue', 'cerise-jaune'
     ]
     const newArray = []
     fruitsArray.forEach((item, _id) => {
@@ -54,8 +54,8 @@ const Game = () => {
     } else {
       alert('YOU LOSE!')
       setGameLaunched(false)
-      setCounter(TIME)
-    // TODO: regenerate grid when game ends
+      // TODO: regenerate grid and launch counter when game ends
+      // setCounter(TIME)
     }
   }, [gameLaunched, counter])
 
@@ -111,16 +111,16 @@ const Game = () => {
     )
 
   return (
-      <>
-        { counter < 60 && counter > 0 ? <div>C&lsquo;est parti !</div> : <br/> }
-        <div>
-          {chunk(gameState, WIDTH).map((row, i) => <div key={i}>{row.map((item, j) =>
-            <Card key={getPos(i, j)} x={i} y={j} value={item.value} callback={cardClicked} state={item.state} image={item.image} />
-          )}</div>)}
-        </div>
-        <div>Countdown: {counter}</div>
-        <div style={{ width: ((TIME - counter) * 0.6) + 'rem', height: '3rem', backgroundColor: 'red' }} />
-      </>
+    <>
+      {counter < 60 && counter > 0 ? <div>C&lsquo;est parti !</div> : <br />}
+      <div>
+        {chunk(gameState, WIDTH).map((row, i) => <div key={i}>{row.map((item, j) =>
+          <Card key={getPos(i, j)} x={i} y={j} value={item.value} callback={cardClicked} state={item.state} image={item.image} />
+        )}</div>)}
+      </div>
+      <div>Countdown: {counter}</div>
+      <div style={{ width: ((TIME - counter) * 0.6) + 'rem', height: '3rem', backgroundColor: 'red' }} />
+    </>
   )
 }
 

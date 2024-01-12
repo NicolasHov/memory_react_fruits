@@ -2,13 +2,16 @@
   "name": "memory_react_the_3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://NicolasHov.github.io/memory_react_fruits",
+  "homepage": "http://NicolasHov.github.io/",
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.9",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
+    "react-canvas-confetti": "^2.0.5",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
     "web-vitals": "^2.0.1"
@@ -46,6 +49,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
-    "standard": "^16.0.3"
+    "standard": "^16.0.3",
+    "tailwindcss": "^3.4.1"
   }
 }
