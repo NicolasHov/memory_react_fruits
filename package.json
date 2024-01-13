@@ -2,7 +2,7 @@
   "name": "memory_react_the_3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://NicolasHov.github.io/",
+  "homepage": "http://NicolasHov.github.io/memory_react_the_3",
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
