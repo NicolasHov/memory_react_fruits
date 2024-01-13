@@ -8,7 +8,6 @@ export const HighScores = () => {
 
   useEffect(() => {
     getHighScore(rawData => {
-      console.log('rawData: ', rawData)
       setHighscores(rawData)
     })
   }, [])
