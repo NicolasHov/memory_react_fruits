@@ -50,7 +50,7 @@ const Game = () => {
       return
     }
     if (counter > 0) {
-      setTimeout(() => setCounter(counter - 1), 1000)
+      setTimeout(() => setCounter(counter - 0.111), 111)
     } else {
       alert('YOU LOSE!')
       setGameLaunched(false)
@@ -69,7 +69,7 @@ const Game = () => {
     setClicksHistory(() => {
       const updatedLastClicks = Array.from(clicksHistory)
       updatedLastClicks.push([x, y])
-      console.log('updatedLastClicks :', updatedLastClicks)
+      // console.log('updatedLastClicks :', updatedLastClicks)
       return updatedLastClicks
     })
     const pos = getPos(x, y)
@@ -99,7 +99,14 @@ const Game = () => {
     }
 
     if (gameState.filter(card => card.state === 'removed').length === gameState.length) {
-      addHighScore(counter)
+      // Format data
+      const date = new Date()
+      const data = {
+        value: Math.trunc(counter),
+        name: 'Joe',
+        timeScore: date.toDateString()
+      }
+      addHighScore(data)
       // setGameStatus(Won)
       alert('YOU WIN! Score: ' + counter)
     }
@@ -118,8 +125,12 @@ const Game = () => {
           <Card key={getPos(i, j)} x={i} y={j} value={item.value} callback={cardClicked} state={item.state} image={item.image} />
         )}</div>)}
       </div>
-      <div>Countdown: {counter}</div>
-      <div style={{ width: ((TIME - counter) * 0.6) + 'rem', height: '3rem', backgroundColor: 'red' }} />
+      {/* <div>Countdown: {counter}</div> */}
+      <div className='countdown'>
+        <div className='gradient' >
+          <div className='overlay' style={{ width: (36 - (TIME - counter) * 0.6) + 'rem', marginLeft: ((TIME - counter) * 0.6) + 'rem' }}></div>
+        </div>
+      </div>
     </>
   )
 }

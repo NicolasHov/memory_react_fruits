@@ -1,11 +1,9 @@
 
-export const addHighScore = score => {
+export const addHighScore = data => {
   const myHeaders = new Headers()
   myHeaders.append('Content-Type', 'application/json')
 
-  const raw = JSON.stringify({
-    value: score
-  })
+  const raw = JSON.stringify(data)
 
   const requestOptions = {
     method: 'POST',

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import './App.css'
 import Game from './components/Game'
 import HighScores from './components/HighScores'
@@ -7,18 +7,16 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <>
-      {/* <Fireworks autorun={{ speed: 20 }} /> */}
-      <div style={{ minHeight: 'calc(100vh - 90px)' }}>
+    <div className={'App'}>
+      <div style={{ textAlign: 'center' }}>
         <div>
-          <h1>Memory</h1>
-          <h2>High Scores</h2>
+          <h1 className="gradient-red">Memory</h1>
           <HighScores />
         </div>
         <Game />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
