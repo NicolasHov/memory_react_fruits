@@ -3,7 +3,7 @@
 
 The server API could be found at [NicolasHov/memory_fruits_server](https://github.com/NicolasHov/memory_fruits_server)
 
-![screenshot memory game](https://github.com/NicolasHov/memory_react_fruits/blob/master/screenshot.png)
+![screenshot memory game](https://github.com/NicolasHov/memory_react_fruits/blob/master/Screenshot2024.png)
 
 ## ROADMAP
 
